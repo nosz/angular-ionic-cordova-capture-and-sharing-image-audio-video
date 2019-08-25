@@ -2,9 +2,7 @@
 ## Example Ionic Angular Image Voice Video Sharing
 
 of the  
-[Ionic Framework](https://ionicframework.com/)
-and  
-[Angular](https://angular.io/)
+[Ionic Framework](https://ionicframework.com/)  and [Angular](https://angular.io/)
 
 ![Screenshot](ionic_angular_capture_and_share_image_audio_video.png)
 
