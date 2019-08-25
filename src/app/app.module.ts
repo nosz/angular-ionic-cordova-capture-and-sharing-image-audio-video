@@ -8,6 +8,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+// add MediaCapture
+import { MediaCapture } from '@ionic-native/media-capture/ngx';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +19,8 @@ import { AppRoutingModule } from './app-routing.module';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    MediaCapture
   ],
   bootstrap: [AppComponent]
 })
