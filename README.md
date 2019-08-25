@@ -1,5 +1,5 @@
 # Step by Step
-## Example Ionic Angular Image Voice Video Sharing
+## Example Angular Ionic Capture and Sharing Image Voice Video
 
 of the  
 [Ionic Framework](https://ionicframework.com/)  and [Angular](https://angular.io/)
