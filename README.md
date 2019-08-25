@@ -1,5 +1,5 @@
 # Step by Step
-## Example Angular Ionic Capture and Sharing Image Voice Video
+## Example Angular Ionic Capture and Sharing Image Audio Video
 
 of the  
 [Ionic Framework](https://ionicframework.com/)  and [Angular](https://angular.io/)
@@ -9,7 +9,7 @@ of the
 ## Table of Contents
 
 - [Getting Started](#getting-started)
-- [Step by Step Example Ionic Angular Image Voice Video Sharing](#step-by-step)
+- [Step by Step Example Ionic Angular Capture and Sharing Image Audio Video](#step-by-step)
 - [Deploying](#deploying)
   - [Android](#android)
   - [iOS](#ios)
