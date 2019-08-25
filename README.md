@@ -211,5 +211,6 @@ Finish :-) Ready for Deploy
 2. Run `ionic cordova run ios --prod`
 
 
+###
 ![Screenshot](ionic_angular_capture_and_share_image_audio_video.png)
     
