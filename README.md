@@ -6,6 +6,8 @@ of the
 and  
 [Angular](https://angular.io/)
 
+![Screenshot](ionic_angular_capture_and_share_image_audio_video.png)
+
 ## Table of Contents
 
 - [Getting Started](#getting-started)
@@ -208,9 +210,4 @@ Finish :-) Ready for Deploy
 
 1. Check iOS Setup: [https://ionicframework.com/docs/installation/ios](https://ionicframework.com/docs/installation/ios)
 
-2. Run `ionic cordova run ios --prod`
-
-
-###
-![Screenshot](ionic_angular_capture_and_share_image_audio_video.png)
-    
+2. Run `ionic cordova run ios --prod`    
