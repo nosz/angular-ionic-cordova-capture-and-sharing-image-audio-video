@@ -36,15 +36,15 @@ and
    - this will create folder resources and config.xml in the project root and adding cordova-plugin-media-capture to package.json
 
 2. Run `npm install @ionic-native/media-capture` from the project root
-- this will adding @ionic-native/media-capture to node_modules
+    - this will adding @ionic-native/media-capture to node_modules
 
 3. Run `ionic cordova plugin add cordova-plugin-x-socialsharing`
-- this. will adding cordova-plugin-x-socialsharing to package.json
+    - this. will adding cordova-plugin-x-socialsharing to package.json
 
 4. Run `npm install @ionic-native/social-sharing`
--  this will adding @ionic-native/social-sharing to node_modules
+    -  this will adding @ionic-native/social-sharing to node_modules
 
-3. Change the /src/app/app.module.ts
+5. Change the /src/app/app.module.ts
 
 ```typescript
 import { NgModule } from '@angular/core';
@@ -79,6 +79,120 @@ import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 })
 export class AppModule {}
 ```
+6. Change the src/app/home/home.page.ts
+
+```typescript
+
+import { Component } from '@angular/core';
+// add MediaCapture
+import { MediaCapture, MediaFile } from '@ionic-native/media-capture/ngx';
+// add SocialSharing
+import { SocialSharing } from '@ionic-native/social-sharing/ngx';
+
+@Component({
+  selector: 'app-home',
+  templateUrl: 'home.page.html',
+  styleUrls: ['home.page.scss']
+})
+export class HomePage {
+  // add MediaCapture and SocialSharing to constructor
+  constructor(
+    public mediaCapture: MediaCapture,
+    public socialSharing: SocialSharing
+  ) {}
+
+  // add function ShareMedia
+  ShareMedia(message, subject, filepath, url) {
+    this.socialSharing.share(message, subject, filepath, url).then(
+      () => {},
+      err => {
+        alert(JSON.stringify(err));
+      }
+    );
+  }
+
+  // add function CaptureAndShareAudio()
+  CaptureAndShareAudio() {
+    this.mediaCapture.captureAudio().then(
+      (audio: MediaFile[]) => {
+        this.ShareMedia(
+          'audio file capture by media capture plugin',
+          'media capture',
+          audio[0].fullPath,
+          ''
+        );
+      },
+      err => {
+        alert(JSON.stringify(err));
+      }
+    );
+  }
+
+  // add function CaptureAndShareVideo()
+  CaptureAndShareVideo() {
+    this.mediaCapture.captureVideo().then(
+      (video: MediaFile[]) => {
+        this.ShareMedia(
+          'video file capture by media capture plugin',
+          'media capture',
+          video[0].fullPath,
+          ''
+        );
+      },
+      err => {
+        alert(JSON.stringify(err));
+      }
+    );
+  }
+
+  // add function CaptureAndShareImage()
+  CaptureAndShareImage() {
+    this.mediaCapture.captureImage().then(
+      (image: MediaFile[]) => {
+        this.ShareMedia(
+          'image file capture by media capture plugin',
+          'media capture',
+          image[0].fullPath,
+          ''
+        );
+      },
+      err => {
+        alert(JSON.stringify(err));
+      }
+    );
+  }
+}
+
+```
+
+7. Change the src/app/home/home.page.html
+
+```typescript
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Capture Media and Share
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <!--add the functions-->
+    <ion-button (click)="CaptureAndShareImage()">Capture and Share Image</ion-button><br>
+    <ion-button (click)="CaptureAndShareAudio()">Capture and Share Audio</ion-button><br>
+    <ion-button (click)="CaptureAndShareVideo()">Capture and Share Video</ion-button>
+  </div>
+</ion-content>
+
+```
+
+8. Run `ionic cordova build android'
+    - this will build the apk-file for android
+    (for ios *)
+
+
 
 ## App Preview
 

@@ -1,14 +1,16 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Capture Media and Share
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <!--add the functions-->
+    <ion-button (click)="CaptureAndShareImage()">Capture and Share Image</ion-button><br>
+    <ion-button (click)="CaptureAndShareAudio()">Capture and Share Audio</ion-button><br>
+    <ion-button (click)="CaptureAndShareVideo()">Capture and Share Video</ion-button>
   </div>
 </ion-content>
