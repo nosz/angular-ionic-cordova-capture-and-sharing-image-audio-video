@@ -171,7 +171,7 @@ export class HomePage {
 
 7. Change the src/app/home/home.page.html
 
-```typescript
+```html
 
 <ion-header>
   <ion-toolbar>
