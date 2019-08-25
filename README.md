@@ -9,7 +9,6 @@ and
 
 - [Getting Started](#getting-started)
 - [Step by Step Example Image Voice Video Sharing](#step-by-step)
-- [App Preview](#app-preview)
 - [Deploying](#deploying)
   - [Android](#android)
   - [iOS](#ios)
@@ -188,26 +187,20 @@ export class HomePage {
 
 ```
 
-8. Run `ionic cordova build android'
-    - this will build the apk-file for android
-    (for ios *)
+Finish :-) Ready for Deploy
 
+### Deploy
 
-
-## App Preview
-
-All app preview screenshots were taken by running `ionic serve --lab` on a retina display.
-
-## Deploying
-
-### Android
+### Android-Deploy
 
 1. Check Android Setup: [https://ionicframework.com/docs/installation/android](https://ionicframework.com/docs/installation/android)
 
 2. Run `ionic cordova run android --prod`
+    - this will generate the apk-file for android
 
-### iOS
+### iOS-Deploy
 
 1. Check iOS Setup: [https://ionicframework.com/docs/installation/ios](https://ionicframework.com/docs/installation/ios)
 
 2. Run `ionic cordova run ios --prod`
+    
