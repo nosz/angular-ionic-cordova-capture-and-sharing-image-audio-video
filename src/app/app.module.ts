@@ -10,7 +10,8 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 // add MediaCapture
 import { MediaCapture } from '@ionic-native/media-capture/ngx';
-
+// add SocialSharing
+import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,7 +21,10 @@ import { MediaCapture } from '@ionic-native/media-capture/ngx';
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    MediaCapture
+    // add MediaCapture
+    MediaCapture,
+    // add SocialSharing
+    SocialSharing
   ],
   bootstrap: [AppComponent]
 })
