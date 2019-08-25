@@ -1,4 +1,5 @@
-# Example Ionic Angular Image Voice Video Sharing
+# Step by Step
+## Example Ionic Angular Image Voice Video Sharing
 
 of the  
 [Ionic Framework](https://ionicframework.com/)
@@ -8,7 +9,7 @@ and
 ## Table of Contents
 
 - [Getting Started](#getting-started)
-- [Step by Step Example Image Voice Video Sharing](#step-by-step)
+- [Step by Step Example Ionic Angular Image Voice Video Sharing](#step-by-step)
 - [Deploying](#deploying)
   - [Android](#android)
   - [iOS](#ios)
@@ -46,6 +47,7 @@ and
 5. Change the /src/app/app.module.ts
 
 ```typescript
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -77,6 +79,9 @@ import { SocialSharing } from '@ionic-native/social-sharing/ngx';
   bootstrap: [AppComponent]
 })
 export class AppModule {}
+
+
+
 ```
 6. Change the src/app/home/home.page.ts
 
@@ -161,6 +166,7 @@ export class HomePage {
     );
   }
 }
+
 
 ```
 
