@@ -3,7 +3,7 @@
 of the  
 [Ionic Framework](https://ionicframework.com/)  and [Angular](https://angular.io/)
 
-![Screenshot](ionic_angular_capture_and_share_image_audio_video.png)
+![Screenshot](src/assets/ionic_angular_capture_and_share_image_audio_video.png)
 
 ## Table of Contents
 
