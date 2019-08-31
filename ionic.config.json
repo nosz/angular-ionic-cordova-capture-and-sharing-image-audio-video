@@ -1,5 +1,5 @@
 {
-  "name": "angular-ionic-image-voice-video-sharing",
+  "name": "angular-ionic-cordova-capture-and-sharing-image-audio-video",
   "integrations": {
     "cordova": {}
   },
